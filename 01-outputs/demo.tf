@@ -23,7 +23,11 @@ variable "example-list" {
         "aws",
         "DevOps",
         100,
-        true
+        true,
+        "SRE"
 
     ]
 }
+ output "ex-list-op" {
+    value = Welcome to ${var.example-list[0]} and ${var.example-list[1]} Training, Training duration is ${var.example-list[2]}, we can also apply for ${var.example-list[4]}
+ }
