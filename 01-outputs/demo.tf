@@ -7,7 +7,7 @@ variable "demo" {
 }
 
 output "printing-demo" {
-    value = "value is ${var.demo}"
+    default = "value is ${var.demo}"
 }
 
 output "print-demo" {
