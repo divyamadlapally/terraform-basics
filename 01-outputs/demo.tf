@@ -3,11 +3,11 @@ output "sample" {
 }
 
 variable "demo" {
-    value = "Terraform Training"
+    default = "Terraform Training"
 }
 
 output "printing-demo" {
-    default = "value is ${var.demo}"
+    value = "value is ${var.demo}"
 }
 
 output "print-demo" {
