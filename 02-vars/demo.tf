@@ -7,3 +7,7 @@ variable "State" {}
 output "State-name" {
     value = "Name of the state is ${var.State}"
 }
+variable "project" {}
+output "project-name" {
+    value = "Name of the project is ${var.project}"
+}
