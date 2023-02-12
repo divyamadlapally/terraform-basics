@@ -11,3 +11,8 @@ resource "aws_instance" "this" {
     Name = "Terraform-Server"
   }
 }
+
+# printing the public ip address of the machine
+output "print-public-dns" {
+  value = aws_instance.public_dns
+}
