@@ -14,5 +14,5 @@ resource "aws_instance" "this" {
 
 # printing the public ip address of the machine
 output "print-public-dns" {
-  value = aws_instance.public_dns
+  value = aws_instance.this.public_dns
 }
