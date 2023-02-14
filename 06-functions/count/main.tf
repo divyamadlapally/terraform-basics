@@ -15,7 +15,7 @@ resource "aws_instance" "this" {
 }
 
 output "public_ip" {
-   value = aws_instance.this.*public_ip
+   value = aws_instance.this.*.public_ip
 }
 
 variable "envs" {
