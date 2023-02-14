@@ -1,7 +1,7 @@
 data "aws_ami" "lab-image" {
   most_recent      = true
-  name_regex       = "ansible"
-  owners           = [907089808340]
+  name_regex       = "b52-ansible-dev-20Jan2023"
+  owners           = [355449129696]
 }
 
 
