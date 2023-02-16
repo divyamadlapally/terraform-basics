@@ -10,7 +10,7 @@ resource "aws_instance" "this" {
  
 
   tags = {
-    Name = "var.envs[count.index]"
+    Name = var.envs[count.index]
   }
 }
 
